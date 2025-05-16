@@ -4,19 +4,19 @@
 
 .about-hero {
     background-color: #f8f9fa;
-    padding: 6rem 2rem;
+    padding: 3rem 1rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
     color: #333;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #666;
     max-width: 600px;
     margin: 0 auto;
