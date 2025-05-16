@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROUSERS</title>
+    <link rel="stylesheet" href="trousers.css">
+</head>
+<body>
+    <!-- code -->
+    <div class="nav2">
+        <ul class="nav2">
+        <li><a href="collection.html">ALL CLOTHING</a></li>
+        <li><a href="bestseller.html">BEST SELLER</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+       
+        <li><a href="hoodies.html">HOODIES $ SETS</a></li>
+        <li><a href="accessorries.html">ACCESSORRIES</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <p class="all-clothing"><b><center>Trousers</center></b></p>
+      <!-- this <div> is for 1904 clothing -->
+    <div class="product-count" >535 products</div>
+
+
+    <div class="top-bar"> 
+        <!-- this <div> is for filters -->
+          <button class="filter-toggle" onclick="toggleFilters()">Filters</button>
+
+          <div class="filters" id="filterPanel" style="display: none;">
+
+            <div class="filter-section">
+                <label><b>Price:</b></label><br>
+                ₹<input type="number" id="minPrice" value="0" onchange="applyFilters()"> -
+                ₹<input type="number" id="maxPrice" value="5000" onchange="applyFilters()">
+            </div>
+        
+            <div class="filter-section">
+              <label><b>Size:</b></label><br>
+              <label><input type="checkbox" value="XS" class="size-filter" onchange="applyFilters()"> XS</label><br>
+              <label><input type="checkbox" value="S" class="size-filter" onchange="applyFilters()"> S</label><br>
+              <label><input type="checkbox" value="M" class="size-filter" onchange="applyFilters()"> M</label><br>
+              <label><input type="checkbox" value="L" class="size-filter" onchange="applyFilters()"> L</label><br>
+              <label><input type="checkbox" value="Free size" class="size-filter" onchange="applyFilters()">Free Size (Fits XS to L)</label><br>
+            </div>
+          
+          <div class="filter-section" id="productContainer">
+            <label><b>Sort by</b></label><br>
+            <label><input type="checkbox" value="Best Selling" class="size-filter" onchange="applyFilters()"> Best Selling</label><br>
+            <label><input type="checkbox" value="Alphabetically, A-Z" class="size-filter" onchange="applyFilters()"> Alphabetically, A-Z</label><br>
+            <label><input type="checkbox" value="Alphabetically, Z-A" class="size-filter" onchange="applyFilters()"> Alphabetically, Z-A</label><br>
+            <label><input type="checkbox" value="Price, low to high" class="size-filter" onchange="applyFilters()"> Price, low to high</label>
+            <label><input type="checkbox" value="Price, high to low" class="size-filter" onchange="applyFilters()">Price, high to low</label><br>
+            <label><input type="checkbox" value="Date, old to new" class="size-filter" onchange="applyFilters()">Date, old to new</label><br>
+            <label><input type="checkbox" value="Date, new to old" class="size-filter" onchange="applyFilters()">Date, new to old</label><br>
+          </div>
+        </div>
+
+        
+
+         <!-- this <div> is the side icon -->
+        <div class="sort-options">
+            <label for="sort">Sort by</label><br>
+                <select id="sort" onchange="applyFilters()">
+                        <option value="best">Best Selling</option>
+                        <option value="az">Alphabetically, A-Z</option>
+                        <option value="za">Alphabetically, Z-A</option>
+                        <option value="low">Price, low to high</option>
+                        <option value="high">Price, high to low</option>
+                        <option value="old">Date, old to new</option>
+                        <option value="new">Date, new to old</option>
+                </select>
+        </div>
+    </div>
+
+    <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Womens</center></b></h3>
+    <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Korean_Style_Baggy_Black_Trouser_460x.webp">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="trousers page img/Mid_Rise_Solid_Pocket_Straight_Leg_Trousers_In_Off-White_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Pleated_High_Waisted_Wide_Leg_Off-White_Trousers_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Drawstring_Side_Flare_Leg_Pants_In_Black_460x.webp">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Wrapped_Pleated_Off_White_Trouser_Without_Belt_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Coco_High_Waist_Wide_Leg_Tailored_Trousers_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Mid_Rise_Solid_Drawstring_Pocket_Wide_Leg_Trousers_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/High-Waist_Solid_Color_Casual_Wide-Leg_Pant_In_Black_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+     </div> 
+
+    <br><br>
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Mens</center></b></h3>
+   <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/PERCIVAL_MENSWEAR_17_7ae96e61-3196-4408-93a8-18a20f9cf45f_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="trousers page img/PERCIVAL_MENSWEAR_357451a4-2e88-47f8-899f-d448b36b53d1_400x400.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/PERCIVAL_MENSWEAR_6_1dd4b88f-ec21-44bf-bf87-747037ede010_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/PERCIVAL_MENSWEAR_dc3583c6-649f-4f18-a4a5-b8615e424181_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/PERCIVAL_MENSWEAR_5d9a9b4d-6c90-4a2c-8b10-9bb02d6a0d00_400x400.avif">
+">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/Percival9thjan230807_66d791be-fca8-4d41-9155-41e8fec45993_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/PERCIVAL_MENSWEAR__3_bb7b279a-fa0c-4444-9442-1d0e65a8d9a9_400x400.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="trousers page img/PERCIVAL_MENSWEAR_7_23c8f865-f8e7-4b5a-ac82-675a2a418384_400x400.avif">
+         <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+      <!-- kids section -->
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Kids</center></b></h3>
+
+   <br>
+    <div class="image-grid">
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/936738c869d6e7cbad7d1fd97c8a39c32cfd1767.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/3d5238aac76c05ac1f420ecf9f80323818117fca.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/b9548c691b2a1a10eca435609651ede4d6ccecd9.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/72e0983beed69177f92409bf57e7974f5b0313a0.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/98ea1fc386cb6ed7686421e481ff4929a30da743.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/3b018585a3d17e9b26f3d6e965e0f8b230acf23f.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/da9cbb2fdeb15d64192cb901aeedcdb0e45f735d.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="trousers page img/985d9fad911565bcda2990db6d3f6229bed41427.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+    <script src="collection.js"></script>
+
+</body>
+</html>

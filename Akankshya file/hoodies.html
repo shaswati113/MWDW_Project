@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOODIES & SETS</title>
+    <link rel="stylesheet" href="trousers.css">
+</head>
+<body>
+    <!-- code -->
+    <div class="nav2">
+        <ul class="nav2">
+        <li><a href="collection.html">ALL CLOTHING</a></li>
+        <li><a href="bestseller.html">BEST SELLER</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="trousers.html">TROUSERS</a></li>
+        <li><a href="hoodies.html">HOODIES $ SETS</a></li>
+        <li><a href="accessorries.html">ACCESSORRIES</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <p class="all-clothing"><b><center>Trousers</center></b></p>
+      <!-- this <div> is for 1904 clothing -->
+    <div class="product-count" >535 products</div>
+
+
+    <div class="top-bar"> 
+        <!-- this <div> is for filters -->
+          <button class="filter-toggle" onclick="toggleFilters()">Filters</button>
+
+          <div class="filters" id="filterPanel" style="display: none;">
+
+            <div class="filter-section">
+                <label><b>Price:</b></label><br>
+                ₹<input type="number" id="minPrice" value="0" onchange="applyFilters()"> -
+                ₹<input type="number" id="maxPrice" value="5000" onchange="applyFilters()">
+            </div>
+        
+            <div class="filter-section">
+              <label><b>Size:</b></label><br>
+              <label><input type="checkbox" value="XS" class="size-filter" onchange="applyFilters()"> XS</label><br>
+              <label><input type="checkbox" value="S" class="size-filter" onchange="applyFilters()"> S</label><br>
+              <label><input type="checkbox" value="M" class="size-filter" onchange="applyFilters()"> M</label><br>
+              <label><input type="checkbox" value="L" class="size-filter" onchange="applyFilters()"> L</label><br>
+              <label><input type="checkbox" value="Free size" class="size-filter" onchange="applyFilters()">Free Size (Fits XS to L)</label><br>
+            </div>
+          
+          <div class="filter-section" id="productContainer">
+            <label><b>Sort by</b></label><br>
+            <label><input type="checkbox" value="Best Selling" class="size-filter" onchange="applyFilters()"> Best Selling</label><br>
+            <label><input type="checkbox" value="Alphabetically, A-Z" class="size-filter" onchange="applyFilters()"> Alphabetically, A-Z</label><br>
+            <label><input type="checkbox" value="Alphabetically, Z-A" class="size-filter" onchange="applyFilters()"> Alphabetically, Z-A</label><br>
+            <label><input type="checkbox" value="Price, low to high" class="size-filter" onchange="applyFilters()"> Price, low to high</label>
+            <label><input type="checkbox" value="Price, high to low" class="size-filter" onchange="applyFilters()">Price, high to low</label><br>
+            <label><input type="checkbox" value="Date, old to new" class="size-filter" onchange="applyFilters()">Date, old to new</label><br>
+            <label><input type="checkbox" value="Date, new to old" class="size-filter" onchange="applyFilters()">Date, new to old</label><br>
+          </div>
+        </div>
+
+        
+
+         <!-- this <div> is the side icon -->
+        <div class="sort-options">
+            <label for="sort">Sort by</label><br>
+                <select id="sort" onchange="applyFilters()">
+                        <option value="best">Best Selling</option>
+                        <option value="az">Alphabetically, A-Z</option>
+                        <option value="za">Alphabetically, Z-A</option>
+                        <option value="low">Price, low to high</option>
+                        <option value="high">Price, high to low</option>
+                        <option value="old">Date, old to new</option>
+                        <option value="new">Date, new to old</option>
+                </select>
+        </div>
+    </div>
+
+    <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Womens</center></b></h3>
+    <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/Set_Of_Three_Corset_Style_Hoodie_With_Sleeveless_Crop_Top_Bottom_In_Mocha_460x.webp">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="hoodies page img/2d393d5be9196140e6dcfe6b47214e16_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/70f212c872130d8bd2aa7bf1fb944ff6_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/Combo_Asymmetrical_Neck_Ruched_Long_Sleeve_Tee_In_Dusty_Blue_and_Black_460x.webp">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/Corset_Style_Trending_Hoodie_Style_Top_Copy_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/5043e29ed312f02939e2101fc2dc64f2_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/7f40163e9a2e3eca55fa4c12f83ea6b3_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/Drawstring_Hooded_Long_SleeveTop_In_Black_460x.webp">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+     </div> 
+
+    <br><br>
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Mens</center></b></h3>
+   <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/PERCIVAL_MENSWEAR_2_501cf1cf-bbbf-4d0b-a5b9-d2269254ee16_400x400.webp">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="hoodies page img/PERCIVAL_MENSWEAR_2_b2696bae-61bc-4822-ba68-38571eeca9db_400x400.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/Percival_Ecom_HOODIE-OLIVE-0809_4ef507a0-c7f7-4c2a-bbc8-d145ab4311fd_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/standard_resolution.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/PERCIVAL_MENSWEAR_2_d86b454f-afb9-4157-ae73-473f88bd8f37_400x400.avif">
+">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/PERCIVAL_MENSWEAR_5_c5915a74-bd9e-4c49-a9a8-aabb52873f36_400x400.avif">
+        <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/PERCIVAL_MENSWEAR_6_217177f2-a825-476d-8702-96003f62002e_400x400.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="hoodies page img/PERCIVAL_MENSWEAR_3_c55f95e7-e5d2-4a77-b4fe-0247e3f0e2d6_400x400.webp">
+         <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+      <!-- kids section -->
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Kids</center></b></h3>
+
+   <br>
+    <div class="image-grid">
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/75bf9edbab4ca2327d205374cd9f26e539425353.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/5aae8e691c71b51951f6d725553da9a18bf99ceb.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/4ce40c82a0505921e3ae0b9227aa1b801762c1fa.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/458bf6c57b9b8137395f7b4fd5e9d810546c37d8.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/c4a6a6f2700f1a6ab74f41598e3a2c15ac9cd254.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/3906918255d6426dced4f49a60cb808470b7ef45.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/dfe997b6480006654cfec10fe821b6071cbb90f3.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="hoodies page img/e2d5fce3a5b5791c06f00d65f9c26718f5d9a487.avif">
+       <h3 class="product-title">Two piece Set : Aesthetics Black Top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+    <script src="collection.js"></script>
+
+</body>
+</html>
