@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESSORIES</title>
+    <link rel="stylesheet" href="accessorries.css">
+</head>
+<body>
+    <!-- code -->
+    <div class="nav2">
+        <ul class="nav2">
+        <li><a href="collection.html">ALL CLOTHING</a></li>
+        <li><a href="bestseller.html">BEST SELLER</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="trousers.html">TROUSERS</a></li>
+        <li><a href="hoodies.html">HOODIES $ SETS</a></li>
+        <li><a href="accessorries.html">ACCESSORIES</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <p class="all-clothing"><b><center>Accessories</center></b></p>
+      <!-- this <div> is for 1904 clothing -->
+    <div class="product-count" >535 products</div>
+
+
+    <div class="top-bar"> 
+        <!-- this <div> is for filters -->
+          <button class="filter-toggle" onclick="toggleFilters()">Filters</button>
+
+          <div class="filters" id="filterPanel" style="display: none;">
+
+            <button type="submit">Apply Filters</button><br><br>
+
+            <div id="appliedFilters" style="display:none;">
+              <h2>Applied Filters:</h2>
+              <div id="filterTags"></div>
+              <button onclick="clearAll()">Clear All</button>
+            </div>
+
+
+            <div class="filter-section">
+                <label><b>Price:</b></label><br>
+                ₹<input type="number" id="minPrice" value="0" onchange="applyFilters()"> -
+                ₹<input type="number" id="maxPrice" value="1099" onchange="applyFilters()">
+            </div>
+        
+            <div class="filter-section">
+              <label><b>Size:</b></label><br>
+              <label><input type="checkbox" value="XS" class="size-filter" onchange="applyFilters()"> XS</label><br>
+              <label><input type="checkbox" value="S" class="size-filter" onchange="applyFilters()"> S</label><br>
+              <label><input type="checkbox" value="M" class="size-filter" onchange="applyFilters()"> M</label><br>
+              <label><input type="checkbox" value="L" class="size-filter" onchange="applyFilters()"> L</label><br>
+              <label><input type="checkbox" value="Free size" class="size-filter" onchange="applyFilters()">Free Size (Fits XS to L)</label><br>
+            </div>
+          
+          <div class="filter-section" id="productContainer">
+            <label><b>Sort by</b></label><br>
+            <label><input type="checkbox" value="Best Selling" class="size-filter" onchange="applyFilters()"> Best Selling</label><br>
+            <label><input type="checkbox" value="Alphabetically, A-Z" class="size-filter" onchange="applyFilters()"> Alphabetically, A-Z</label><br>
+            <label><input type="checkbox" value="Alphabetically, Z-A" class="size-filter" onchange="applyFilters()"> Alphabetically, Z-A</label><br>
+            <label><input type="checkbox" value="Price, low to high" class="size-filter" onchange="applyFilters()"> Price, low to high</label>
+            <label><input type="checkbox" value="Price, high to low" class="size-filter" onchange="applyFilters()">Price, high to low</label><br>
+            <label><input type="checkbox" value="Date, old to new" class="size-filter" onchange="applyFilters()">Date, old to new</label><br>
+            <label><input type="checkbox" value="Date, new to old" class="size-filter" onchange="applyFilters()">Date, new to old</label><br>
+          </div>
+        </div>
+
+        
+
+         <!-- this <div> is the side icon -->
+        <div class="sort-options">
+            <label for="sort">Sort by</label><br>
+                <select id="sort" onchange="applyFilters()">
+                        <option value="best">Best Selling</option>
+                        <option value="az">Alphabetically, A-Z</option>
+                        <option value="za">Alphabetically, Z-A</option>
+                        <option value="low">Price, low to high</option>
+                        <option value="high">Price, high to low</option>
+                        <option value="old">Date, old to new</option>
+                        <option value="new">Date, new to old</option>
+                </select>
+        </div>
+    </div>
+
+    <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Womens</center></b></h3>
+    <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/5abba468c6ebaec398bb2dac1bf6b287_85b2f751-b667-42be-810f-57354e4b2195_460x.webp">
+        <h3 class="product-title">Black shoes: min heels</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 799.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="accessories page img/Front_side_view_of_a_women_wearing_Gothic_Style_Trending_Chain_Detail_Accessory_Slingback_Platform_Shoe_460x.webp">
+       <h3 class="product-title">Black Heels: Ankel top</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 899.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/Gothic_Style_Trending_Accessory_Detail_Platform_Shoes_460x.webp">
+       <h3 class="product-title">BLack Shoes : Formal</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 990.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+       <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/Top_view_of_a_women_wearing_Back_To_School_Accessory_Detail_Chunky_Sole_Shoe_Footwear_460x.jpg">
+        <h3 class="product-title">Min Hight : Black Shoes</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+     </div> 
+
+    <br><br>
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Mens</center></b></h3>
+   <br>
+
+    <div class="image-grid">
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/VN000CQAOFW-HERO_2_400x400.avif">
+        <h3 class="product-title">Sneakers : Blue lining White Sneakers</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 1,099.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+         <img src="accessories page img/PERCIVAL_MENSWEAR_2_274c986a-07d5-435b-9cb3-07ebb2b3d0c1_400x400.webp">
+       <h3 class="product-title">Black Cap : Percival Flower</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 599.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/PERCIVAL_MENSWEAR_5_92559c3f-efd3-457f-aa44-f638f2dd102b_400x400.avif">
+        <h3 class="product-title">Green Formal Tie</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 399.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/PERCIVAL_MENSWEAR_9fd1b613-ddb5-4a66-9821-fb6599d907ff_400x400.avif">
+        <h3 class="product-title">Blue cap </h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs.599.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+      <!-- kids section -->
+   <h3 class="all-clothing" style="background-color: #313132; color: aliceblue;"><b><center>Kids</center></b></h3>
+
+   <br>
+    <div class="image-grid">
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/73e47b1d341fab9ed84c08dab95db3625025e13f.avif">
+       <h3 class="product-title">Black Patch Cap</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 799.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/2ce88e7bb4dd9c886f65a223760d3126089b06de.avif">
+       <h3 class="product-title">Oval Goggles</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 899.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/85b1fcce3cacd74a186b9b63695f5d95ca64af50.avif">
+       <h3 class="product-title">Bow Hair Clips</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 299.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+
+      <div class="image-items" data-price="799" data-size="Free size">
+
+        <img src="accessories page img/053257d59454b5c40755ef26b9e4c90cf3c000ce.avif">
+       <h3 class="product-title">Cute Hair Clips</h3>
+        <div class="price-row">
+        <p class="price-discounted">Rs. 399.00</p>
+        <p class="price-original">Rs. 2,499.00</p>
+        <p class="sale-label">Sale</p>
+        </div>
+      </div>
+    </div>
+    <script src="accessorries.js"></script>
+
+</body>
+</html>
