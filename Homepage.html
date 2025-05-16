@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VENUS</title>
     <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="book_design_style.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prata&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -36,7 +38,7 @@
         <section class="banner" id="sale-banner">
             <img src="https://marketplace.canva.com/EAGY_oKTYME/2/0/1600w/canva-black-and-gold-modern-fashion-store-banner-wFnNihlqAys.jpg">
         </section>
-        <section  class="scroll" id="top-fashion-trends">
+        <section class="scroll" id="top-fashion-trends">
             <section class="scrollable">
                 <img src="image-1.webp" class="image">
                 <img src="image-2.webp" class="image">
@@ -52,38 +54,29 @@
                 <img src="image-5.webp" class="image">
             </section>
         </section>
-        <section class="container" id="seasonal collections">
-            
+
+        <h2>Seasonal Collections</h2>
+        <section class="container" id="seasonal-collections">
+            <!-- Flipbook inserted here -->
+            <div class="book-container">
+                <button class="nav" onclick="prevPage()" id="prevBtn" aria-label="Previous page">&#8592;</button>
+                <div class="book" id="book"></div>
+                <button class="nav" onclick="nextPage()" id="nextBtn" aria-label="Next page">&#8594;</button>
+            </div>
+            <audio id="flipSound" src="page-flip.mp3" preload="auto"></audio>
         </section>
-        <h2>Featured Products</h2>
-        <section class="container" id="featured-products">
-            <section class="sub-section" id="clothing">
-                
-            </section>
-            <section class="sub-section" id="accessories">
-                
-            </section>
-            <section class="sub-section" id="top-seller">
-            
-            </section>
-        </section>
-        <h3>Shop By Category</h2>
+
+        <h3>Shop By Category</h3>
         <section class="container">
-            <section class="sub-section" id="men">
-            
-            </section>
-            <section class="sub-section" id="women">
-            
-            </section>
-            <section class="sub-section" id="kids">
-            
-            </section>
-            <section class="sub-section" id="seasonal">
-            
-            </section>
+            <section class="sub-section" id="men"></section>
+            <section class="sub-section" id="women"></section>
+            <section class="sub-section" id="kids"></section>
+            <section class="sub-section" id="seasonal"></section>
         </section>
     </main>
+
     <svg id="back-to-top" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M464.62-350.46h31.53v-202.77l88.62 88.61L606-485.85 480.77-610.31l-126 124.46L376-464.62l88.62-88.61v202.77ZM480.13-120q-74.44 0-139.79-28.34t-114.48-77.42q-49.13-49.08-77.49-114.37Q120-405.42 120-479.87q0-74.67 28.34-140.41 28.34-65.73 77.42-114.36 49.08-48.63 114.37-76.99Q405.42-840 479.87-840q74.67 0 140.41 28.34 65.73 28.34 114.36 76.92 48.63 48.58 76.99 114.26Q840-554.81 840-480.13q0 74.44-28.34 139.79t-76.92 114.48q-48.58 49.13-114.26 77.49Q554.81-120 480.13-120Z"/></svg>
+
     <footer>
         <p>2025 &copy;VÉNUS</p>
         <ul type="none">
@@ -92,19 +85,98 @@
             <a href="#disc" onclick="change('disc')"><li>Disclaimer</li></a>
         </ul>
         <ul type="none" id="follow">
-        	<li>Follow us</li>
-            <a href="https://www.instagram.com/accounts/login/?hl=en"><li><img src="https://cdn-icons-png.flaticon.com/128/408/408758.png" ></li></a>
+            <li>Follow us</li>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><li><img src="https://cdn-icons-png.flaticon.com/128/408/408758.png"></li></a>
             <a href="https://x.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"></li></a>
             <a href="https://www.facebook.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"></li></a>
             <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png"></li></a>
             <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png"></li></a>
             <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></li></a>
-
         </ul>
         <address>255 Road, Villa Cedrick, Ontario</address>
         <p>Ph:1846-9193-561</p>
         <p><a href="mailto: venus@email.com">Email: venus.email.com</a></p>
-    </footer> 
+    </footer>
+
+    <script>
+    const pagesData = [
+      { image: 'summer wears.jfif', text: 'Summer Wears' },
+      { image: 'autmn dress.avif', text: 'Autumn Wears' },
+      { image: 'winter wear.jpg', text: 'Winter Wears' },
+      { image: 'spring wears.webp', text: 'Spring Wears' }
+    ];
+
+    let currentPage = 0;
+    const book = document.getElementById('book');
+    const flipSound = document.getElementById('flipSound');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function renderBook() {
+      book.innerHTML = '';
+      for (let i = 0; i < pagesData.length; i++) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'page-wrapper';
+        wrapper.dataset.index = i;
+        wrapper.style.zIndex = pagesData.length - i;
+
+        const left = document.createElement('div');
+        left.className = 'page left-page';
+        const img = document.createElement('img');
+        img.src = pagesData[i].image;
+        left.appendChild(img);
+
+        const right = document.createElement('div');
+        right.className = 'page right-page';
+        const text = document.createElement('div');
+        text.className = 'text';
+        text.textContent = pagesData[i].text;
+        right.appendChild(text);
+
+        wrapper.appendChild(left);
+        wrapper.appendChild(right);
+        book.appendChild(wrapper);
+
+        if (i < currentPage) {
+          wrapper.classList.add('flipped');
+        }
+      }
+      updateButtons();
+    }
+
+    function playFlipSound() {
+      flipSound.currentTime = 0;
+      flipSound.play();
+    }
+
+    function nextPage() {
+      if (currentPage < pagesData.length - 1) {
+        const wrapper = book.querySelector(`.page-wrapper[data-index="${currentPage}"]`);
+        if (wrapper) wrapper.classList.add('flipped');
+        playFlipSound();
+        currentPage++;
+        updateButtons();
+      }
+    }
+
+    function prevPage() {
+      if (currentPage > 0) {
+        currentPage--;
+        const wrapper = book.querySelector(`.page-wrapper[data-index="${currentPage}"]`);
+        if (wrapper) wrapper.classList.remove('flipped');
+        playFlipSound();
+        updateButtons();
+      }
+    }
+
+    function updateButtons() {
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage >= pagesData.length - 1;
+    }
+
+    renderBook();
+    </script>
+
     <script src="Homepage.js"></script>
 </body>
 </html>
