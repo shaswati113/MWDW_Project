@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VENUS</title>
+    <title>MUSE</title>
     <link rel="stylesheet" href="Homepage.css">
     <link rel="stylesheet" href="book_design_style.css">
     <!-- Fonts -->
@@ -14,47 +14,84 @@
 </head>
 <body>
     <header>
+        <section id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </section>
         <section id="logo-img">
             <img src="logo.png" height="100px" width="auto" style="margin-top: 3px;">
         </section>
         <section id="navigation-bar">
-            <nav>
+            <nav id="nav">
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M256-213.85 213.85-256l224-224-224-224L256-746.15l224 224 224-224L746.15-704l-224 224 224 224L704-213.85l-224-224-224 224Z"/></svg>
                 <ul type="none">
                     <a href="#"><li>Home</li></a>
                     <a href=""><li>Collections</li></a>
                     <a href=""><li>Blog</li></a>
-                    <a href=""><li>About</li></a>
-                    <a href=""><li>Contact</li></a>
-                    <a href=""><li style="color:darkblue; a:hover{color:rgb(67, 67, 249)}">Sign Up</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href=""><li style="color:darkred; a:hover{color:rgb(67, 67, 249)}">Sign Up</li></a>
                 </ul>
             </nav>
         </section>
         <section id="search-bar">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M781.69-136.92 530.46-388.16q-30 24.77-69 38.77-39 14-80.69 14-102.55 0-173.58-71.01-71.03-71.01-71.03-173.54 0-102.52 71.01-173.6 71.01-71.07 173.54-71.07 102.52 0 173.6 71.03 71.07 71.03 71.07 173.58 0 42.85-14.38 81.85-14.39 39-38.39 67.84l251.23 251.23-42.15 42.16ZM380.77-395.38q77.31 0 130.96-53.66 53.66-53.65 53.66-130.96t-53.66-130.96q-53.65-53.66-130.96-53.66t-130.96 53.66Q196.15-657.31 196.15-580t53.66 130.96q53.65 53.66 130.96 53.66Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m480-146.93-44.15-39.69q-99.46-90.23-164.5-155.07-65.04-64.85-103.08-115.43-38.04-50.57-53.15-92.27Q100-591.08 100-634q0-85.15 57.42-142.58Q214.85-834 300-834q52.38 0 99 24.5t81 70.27q34.38-45.77 81-70.27 46.62-24.5 99-24.5 85.15 0 142.58 57.42Q860-719.15 860-634q0 42.92-15.12 84.61-15.11 41.7-53.15 92.27-38.04 50.58-102.89 115.43Q624-276.85 524.15-186.62L480-146.93Zm0-81.07q96-86.38 158-148.08 62-61.69 98-107.19t50-80.81q14-35.3 14-69.92 0-60-40-100t-100-40q-47.38 0-87.58 26.88-40.19 26.89-63.65 74.81h-57.54q-23.85-48.31-63.85-75Q347.38-774 300-774q-59.62 0-99.81 40Q160-694 160-634q0 34.62 14 69.92 14 35.31 50 80.81t98 107q62 61.5 158 148.27Zm0-273Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M252.31-100Q222-100 201-121q-21-21-21-51.31v-455.38Q180-658 201-679q21-21 51.31-21H330v-10q0-62.15 43.92-106.08Q417.85-860 480-860t106.08 43.92Q630-772.15 630-710v10h77.69Q738-700 759-679q21 21 21 51.31v455.38Q780-142 759-121q-21 21-51.31 21H252.31Zm0-60h455.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H630v90q0 12.77-8.62 21.38Q612.77-520 600-520t-21.38-8.62Q570-537.23 570-550v-90H390v90q0 12.77-8.62 21.38Q372.77-520 360-520t-21.38-8.62Q330-537.23 330-550v-90h-77.69q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v455.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM390-700h180v-10q0-37.61-26.19-63.81Q517.62-800 480-800q-37.62 0-63.81 26.19Q390-747.61 390-710v10ZM240-160v-480 480Z"/></svg>
+            <svg id="search-button" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M781.69-136.92 530.46-388.16q-30 24.77-69 38.77-39 14-80.69 14-102.55 0-173.58-71.01-71.03-71.01-71.03-173.54 0-102.52 71.01-173.6 71.01-71.07 173.54-71.07 102.52 0 173.6 71.03 71.07 71.03 71.07 173.58 0 42.85-14.38 81.85-14.39 39-38.39 67.84l251.23 251.23-42.15 42.16ZM380.77-395.38q77.31 0 130.96-53.66 53.66-53.65 53.66-130.96t-53.66-130.96q-53.65-53.66-130.96-53.66t-130.96 53.66Q196.15-657.31 196.15-580t53.66 130.96q53.65 53.66 130.96 53.66Z"/></svg>
             <input id="search-item" type="text" placeholder=" Search">
         </section>
     </header>
     <main>
         <section class="banner" id="sale-banner">
-            <img src="https://marketplace.canva.com/EAGY_oKTYME/2/0/1600w/canva-black-and-gold-modern-fashion-store-banner-wFnNihlqAys.jpg">
+            <img src="1[2].png" alt="Sale Banner">
         </section>
-        <section class="scroll" id="top-fashion-trends">
-            <section class="scrollable">
-                <img src="image-1.webp" class="image">
-                <img src="image-2.webp" class="image">
-                <img src="image-3.webp" class="image">
-                <img src="image-4.webp" class="image">
-                <img src="image-5.webp" class="image">
-            </section>
-            <section class="scrollable">
-                <img src="image-1.webp" class="image">
-                <img src="image-2.webp" class="image">
-                <img src="image-3.webp" class="image">
-                <img src="image-4.webp" class="image">
-                <img src="image-5.webp" class="image">
-            </section>
-        </section>
-
+        <div class="slideshow-container" id="mobile"  >
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image-1.webp">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image-2.jpg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image-3.jpg">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image-4.webp">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image-5.webp">
+            </div>
+        </div>
+        <div id="desktop">
+          <section  class="scroll" id="top-fashion-trends">
+              <section class="scrollable">
+                  <img src="image-1.webp" class="image">
+                  <img src="image-2.jpg" class="image">
+                  <img src="image-3.jpg" class="image">
+                  <img src="image-4.webp" class="image">
+                  <img src="image-5.webp" class="image">
+              </section>
+              <section class="scrollable">
+                  <img src="image-1.webp" class="image">
+                  <img src="image-2.jpg" class="image">
+                  <img src="image-3.jpg" class="image">
+                  <img src="image-4.webp" class="image">
+                  <img src="image-5.webp" class="image">
+              </section>
+          </section>
+        </div>
+        <br>
+          <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
         <h2>Seasonal Collections</h2>
         <section class="container" id="seasonal-collections">
             <!-- Flipbook inserted here -->
@@ -65,39 +102,25 @@
             </div>
             <audio id="flipSound" src="page-flip.mp3" preload="auto"></audio>
         </section>
-
-        <h3>Shop By Category</h3>
-        <section class="container">
-            <section class="sub-section" id="men"></section>
-            <section class="sub-section" id="women"></section>
-            <section class="sub-section" id="kids"></section>
-            <section class="sub-section" id="seasonal"></section>
-        </section>
     </main>
-
     <svg id="back-to-top" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M464.62-350.46h31.53v-202.77l88.62 88.61L606-485.85 480.77-610.31l-126 124.46L376-464.62l88.62-88.61v202.77ZM480.13-120q-74.44 0-139.79-28.34t-114.48-77.42q-49.13-49.08-77.49-114.37Q120-405.42 120-479.87q0-74.67 28.34-140.41 28.34-65.73 77.42-114.36 49.08-48.63 114.37-76.99Q405.42-840 479.87-840q74.67 0 140.41 28.34 65.73 28.34 114.36 76.92 48.63 48.58 76.99 114.26Q840-554.81 840-480.13q0 74.44-28.34 139.79t-76.92 114.48q-48.58 49.13-114.26 77.49Q554.81-120 480.13-120Z"/></svg>
-
     <footer>
-        <p>2025 &copy;VÉNUS</p>
-        <ul type="none">
+        <p>2025 &copy;muse</p>
+        <ul type="none" id="footer-links">
             <a href="#privacy" onclick="change('privacy')"><li>Privacy Policy</li></a>
             <a href="#toc" onclick="change('toc')"><li>Terms of Service</li></a>
             <a href="#disc" onclick="change('disc')"><li>Disclaimer</li></a>
         </ul>
         <ul type="none" id="follow">
-            <li>Follow us</li>
-            <a href="https://www.instagram.com/accounts/login/?hl=en"><li><img src="https://cdn-icons-png.flaticon.com/128/408/408758.png"></li></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><li><img src="https://cdn-icons-png.flaticon.com/128/408/408758.png" ></li></a>
             <a href="https://x.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"></li></a>
             <a href="https://www.facebook.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"></li></a>
-            <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png"></li></a>
-            <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png"></li></a>
-            <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></li></a>
+            <a href="https://www.youtube.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png"></li></a>
+            <a href="https://www.tiktok.com/en/"><li><img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png"></li></a>
+            <a href="https://in.pinterest.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></li></a>
         </ul>
-        <address>255 Road, Villa Cedrick, Ontario</address>
-        <p>Ph:1846-9193-561</p>
-        <p><a href="mailto: venus@email.com">Email: venus.email.com</a></p>
+        <a href="mailto: muse@email.com">Email: muse@email.com</a>
     </footer>
-
     <script>
     const pagesData = [
       { image: 'summer wears.jfif', text: 'Summer Wears' },

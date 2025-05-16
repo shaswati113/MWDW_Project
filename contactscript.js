@@ -2,8 +2,6 @@ function clearerror(id) {
   document.getElementById(id).getElementsByClassName('formerror')[0].innerHTML = '';
 }
 
-
-
 function seterror(id, error) {
     //set error inside tag of id
     element = document.getElementById(id);
