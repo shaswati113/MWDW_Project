@@ -205,6 +205,12 @@ input[type="number"] {
   .image-grid{
     grid-template-columns: repeat(3,1fr);
   }
+  .nav2 ul{
+    font-size: 12px;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (max-width:480px){
