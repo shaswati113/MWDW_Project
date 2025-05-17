@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog - Latest Articles</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="HeaderFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <section id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </section>
+        <section id="logo-img">
+            <img src="logo.png" height="100px" width="auto" style="margin-top: 3px;">
+        </section>
+        <section id="navigation-bar">
+            <nav id="nav">
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M256-213.85 213.85-256l224-224-224-224L256-746.15l224 224 224-224L746.15-704l-224 224 224 224L704-213.85l-224-224-224 224Z"/></svg>
+                <ul type="none">
+                    <a href="#"><li>Home</li></a>
+                    <a href=""><li>Collections</li></a>
+                    <a href=""><li>Blog</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href=""><li style="color:darkred; a:hover{color:rgb(67, 67, 249)}">Sign Up</li></a>
+                </ul>
+            </nav>
+        </section>
+        <section id="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m480-146.93-44.15-39.69q-99.46-90.23-164.5-155.07-65.04-64.85-103.08-115.43-38.04-50.57-53.15-92.27Q100-591.08 100-634q0-85.15 57.42-142.58Q214.85-834 300-834q52.38 0 99 24.5t81 70.27q34.38-45.77 81-70.27 46.62-24.5 99-24.5 85.15 0 142.58 57.42Q860-719.15 860-634q0 42.92-15.12 84.61-15.11 41.7-53.15 92.27-38.04 50.58-102.89 115.43Q624-276.85 524.15-186.62L480-146.93Zm0-81.07q96-86.38 158-148.08 62-61.69 98-107.19t50-80.81q14-35.3 14-69.92 0-60-40-100t-100-40q-47.38 0-87.58 26.88-40.19 26.89-63.65 74.81h-57.54q-23.85-48.31-63.85-75Q347.38-774 300-774q-59.62 0-99.81 40Q160-694 160-634q0 34.62 14 69.92 14 35.31 50 80.81t98 107q62 61.5 158 148.27Zm0-273Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M252.31-100Q222-100 201-121q-21-21-21-51.31v-455.38Q180-658 201-679q21-21 51.31-21H330v-10q0-62.15 43.92-106.08Q417.85-860 480-860t106.08 43.92Q630-772.15 630-710v10h77.69Q738-700 759-679q21 21 21 51.31v455.38Q780-142 759-121q-21 21-51.31 21H252.31Zm0-60h455.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H630v90q0 12.77-8.62 21.38Q612.77-520 600-520t-21.38-8.62Q570-537.23 570-550v-90H390v90q0 12.77-8.62 21.38Q372.77-520 360-520t-21.38-8.62Q330-537.23 330-550v-90h-77.69q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v455.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM390-700h180v-10q0-37.61-26.19-63.81Q517.62-800 480-800q-37.62 0-63.81 26.19Q390-747.61 390-710v10ZM240-160v-480 480Z"/></svg>
+            <svg id="search-button" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M781.69-136.92 530.46-388.16q-30 24.77-69 38.77-39 14-80.69 14-102.55 0-173.58-71.01-71.03-71.01-71.03-173.54 0-102.52 71.01-173.6 71.01-71.07 173.54-71.07 102.52 0 173.6 71.03 71.07 71.03 71.07 173.58 0 42.85-14.38 81.85-14.39 39-38.39 67.84l251.23 251.23-42.15 42.16ZM380.77-395.38q77.31 0 130.96-53.66 53.66-53.65 53.66-130.96t-53.66-130.96q-53.65-53.66-130.96-53.66t-130.96 53.66Q196.15-657.31 196.15-580t53.66 130.96q53.65 53.66 130.96 53.66Z"/></svg>
+            <input id="search-item" type="text" placeholder=" Search">
+        </section>
+    </header>
+    <div class="blog-main">
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <h2>Fashion Blog</h2>
+            <p>Discover the latest trends, style tips, and fashion inspiration from our expert writers.</p>
+        </section>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <article class="blog-card">
+                <img src="images/Summer Lookbook.png" alt="Fashion Article 1">
+                <div class="blog-content">
+                    <h3>Summer Fashion Trends 2024</h3>
+                    <div class="blog-meta">By Sarah Johnson | June 15, 2024</div>
+                    <p class="blog-summary">Explore the hottest fashion trends for summer 2024. From vibrant colors to sustainable materials, discover what's in vogue this season.</p>
+                    <a href="post.html" class="btn">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="blog-card">
+                <img src="images/Sustainably+Chic+_+Sustainable+Fashion+Guide+_+What+is+Sustainable+Fashion+_+Ultimate+Guide+for+Beginners+_+How+to+Shop+for+Sustainable+Clothing.jpeg" alt="Fashion Article 2">
+                <div class="blog-content">
+                    <h3>Sustainable Fashion Guide</h3>
+                    <div class="blog-meta">By Emma Davis | June 12, 2024</div>
+                    <p class="blog-summary">Learn how to build a sustainable wardrobe without compromising on style. Tips for eco-friendly fashion choices.</p>
+                    <a href="post.html" class="btn">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Card 3 -->
+            <article class="blog-card">
+                <img src="images/Accessorize-1.png" alt="Fashion Article 3">
+                <div class="blog-content">
+                    <h3>Accessorizing Like a Pro</h3>
+                    <div class="blog-meta">By Michael Chen | June 10, 2024</div>
+                    <p class="blog-summary">Master the art of accessorizing with our comprehensive guide to jewelry, bags, and other fashion accessories.</p>
+                    <a href="post.html" class="btn">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Card 4 -->
+            <article class="blog-card">
+                <img src="images/Screen-Shot-2022-03-08-at-3.19.50-PM.png" alt="Fashion Article 4">
+                <div class="blog-content">
+                    <h3>Street Style Inspiration</h3>
+                    <div class="blog-meta">By Alex Thompson | June 8, 2024</div>
+                    <p class="blog-summary">Get inspired by the latest street style trends from fashion capitals around the world.</p>
+                    <a href="post.html" class="btn">Read More</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a></li>
+            <li><a href="collections.html">
+                <i class="fas fa-tshirt"></i>
+                <span>Collections</span>
+            </a></li>
+            <li><a href="trends.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Trends</span>
+            </a></li>
+            <li><a href="blog.html" class="active">
+                <i class="fas fa-blog"></i>
+                <span>Blog</span>
+            </a></li>
+            <li><a href="about.html">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a></li>
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>2025 &copy;muse</p>
+        <ul type="none" id="footer-links">
+            <a href="#privacy" onclick="change('privacy')"><li>Privacy Policy</li></a>
+            <a href="#toc" onclick="change('toc')"><li>Terms of Service</li></a>
+            <a href="#disc" onclick="change('disc')"><li>Disclaimer</li></a>
+        </ul>
+        <ul type="none" id="follow">
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><li><img src="https://cdn-icons-png.flaticon.com/128/408/408758.png" ></li></a>
+            <a href="https://x.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"></li></a>
+            <a href="https://www.facebook.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"></li></a>
+            <a href="https://www.youtube.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png"></li></a>
+            <a href="https://www.tiktok.com/en/"><li><img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png"></li></a>
+            <a href="https://in.pinterest.com/"><li><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></li></a>
+        </ul>
+        <p><a href="mailto: muse@email.com">Email: muse@email.com</a></p>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a></li>
+            <li><a href="collections.html">
+                <i class="fas fa-tshirt"></i>
+                <span>Collections</span>
+            </a></li>
+            <li><a href="trends.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Trends</span>
+            </a></li>
+            <li><a href="blog.html" class="active">
+                <i class="fas fa-blog"></i>
+                <span>Blog</span>
+            </a></li>
+            <li><a href="about.html">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a></li>
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
+</body>
+</html>
