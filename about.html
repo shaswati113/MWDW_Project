@@ -38,7 +38,6 @@
             <input id="search-item" type="text" placeholder=" Search">
         </section>
     </header>
-
     <main class="about-main">
         <section class="about-hero">
             <div class="hero-content">
@@ -213,5 +212,37 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/mobile-nav.js"></script>
+   <script>
+      let hamburger=document.getElementById("hamburger");
+      let close=document.getElementById("close");
+      hamburger.addEventListener("click",function(){
+          let nav=document.getElementById("nav");
+          if (nav.style.display==="none"){
+              nav.style.display="block";
+          }
+          else{
+              nav.style.display="none";
+          }   
+      });
+      close.addEventListener("click",function(){
+          let nav=document.getElementById("nav");
+          if (nav.style.display==="block"){
+              nav.style.display="none";
+          }
+          else{
+              nav.style.display="block";
+          }   
+      });
+      let navLinks=document.querySelectorAll(".nav-link");
+      navLinks.forEach(function(link){
+          link.addEventListener("click",function(){
+              let nav=document.getElementById("nav");
+              if (nav.style.display==="block"){
+                  nav.style.display="none";
+              }
+          });
+      });
+    </script>
+    
 </body>
 </html>

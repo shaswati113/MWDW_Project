@@ -46,17 +46,7 @@ navLinks.forEach(function(link){
         }
     });
 });
-// Function to open search bar on click in a mobile view
-let searchIcon=document.getElementById("search-button");
-searchIcon.addEventListener("click",function(){
-    let searchBar=document.getElementById("search-item");
-    if (searchBar.style.display==="none"){
-        searchBar.style.display="block";
-    }
-    else{
-        searchBar.style.display="none";
-    } 
-});
+
 //Function to close mobile class and open desktop class
 if (window.innerWidth > 768) {
     let mobile=document.getElementById("mobile");
